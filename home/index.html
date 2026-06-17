@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InAmigos Foundation — Uniting Minds for Change</title>
+  <meta name="description" content="InAmigos Foundation is a registered Section 8 NGO dedicated to education, animal welfare, food relief, women empowerment, and environmental conservation in India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <header class="navbar home-nav" id="navbar">
+    <div class="nav-logo">
+      <img src="../assets/logo.png" alt="InAmigos Foundation Logo" class="logo-icon-img">
+      <span class="nav-brand">InAmigos <em>Foundation</em></span>
+    </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="../home/" class="active">Home</a>
+      <a href="../about/">About Us</a>
+      <a href="../causes/">Causes</a>
+      <a href="../stories/">Stories</a>
+      <a href="../events/">Events</a>
+      <a href="javascript:void(0)" onclick="openForm()" class="btn btn-dark nav-cta">Volunteer Now</a>
+    </nav>
+  </header>
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop');"></div>
+    <div class="hero-overlay" style="background: linear-gradient(to bottom, rgba(34, 39, 64, 0.45) 0%, rgba(34, 39, 64, 0.65) 100%);"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 800; color: var(--white); line-height: 1.25; margin-bottom: 12px; max-width: 750px;">Be the Reason Someone's Life Changes</h1>
+        <p class="hero-desc" style="font-size: 1.15rem; font-style: italic; font-weight: 500; color: rgba(255,255,255,0.9); margin-bottom: 24px; max-width: 600px; line-height: 1.6;">"I give not because I have much — but because I know a little can mean everything to someone else."</p>
+        <div class="hero-actions">
+          <button onclick="openForm()" class="btn btn-amber">Volunteer Now</button>
+          <a href="https://rzp.io/l/kWQ87HP" target="_blank" class="btn btn-outline">Donate Now ♥</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow">Journey</span>
+          <h2 class="about-title">A foundation built on<br><em>collective heart</em></h2>
+          <div class="title-line"></div>
+          <p class="about-text">
+            Founded on <strong>September 23, 2020</strong>, by Mr. Govind Shukla (Founder & CEO), InAmigos Foundation is a licensed non-profit organization established under Section 8 of the Central Government’s Companies Act. 
+          </p>
+          <p class="about-text">
+            We operate transparently with structured social pathways, ensuring every contribution goes directly to where it is needed most. Join our community to take your first steps in volunteering.
+          </p>
+          <div style="margin-top:32px;">
+            <a href="../about/" class="btn btn-dark">Learn More About Us</a>
+          </div>
+        </div>
+        <div class="about-right reveal d2">
+          <div class="about-card card-mission">
+            <h3>Our Mission</h3>
+            <p>To deliver self-sustaining positive change across underprivileged sectors through structured programs in food distribution, child education, women skill workshops, and animal welfare drives.</p>
+          </div>
+          <div class="about-card card-vision">
+            <h3>Our Vision</h3>
+            <p>To foster an inclusive, empathetic, and empowered community where basic needs are protected, ecosystems are conserved, and every youth is equipped to shape a brighter future.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="causes-preview" id="causes-preview">
+    <div class="container">
+      <div class="reveal text-center" style="max-width: 600px; margin: 0 auto 54px;">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="sec-title">Six causes. One heartbeat.</h2>
+        <p class="sec-sub">Every project is a thread in the same fabric of change.</p>
+      </div>
+      <div class="carousel-container reveal">
+        <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="carousel-btn carousel-btn-next" id="carouselNext" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <div class="cause-preview-card" style="border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; background: var(--white); height: 100%;">
+                <img src="../assets/plant.png" alt="Project Prakriti" class="carousel-icon-img">
+                <div class="cause-name" style="font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; color: var(--forest-deep); margin-bottom: 12px;">Project Prakriti</div>
+                <p class="cause-summary" style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">Driving national sustainability through tree planting, ecological protection, and environmental awareness across India's landscapes.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cause-preview-card" style="border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; background: var(--white); height: 100%;">
+                <img src="../assets/plane.png" alt="Project Udaan" class="carousel-icon-img">
+                <div class="cause-name" style="font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; color: var(--forest-deep); margin-bottom: 12px;">Project Udaan</div>
+                <p class="cause-summary" style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">Women empowerment through skill development workshops, Self Help Group collaboration, and financial independence programs.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cause-preview-card" style="border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; background: var(--white); height: 100%;">
+                <img src="../assets/paw.png" alt="Project Jeev" class="carousel-icon-img">
+                <div class="cause-name" style="font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; color: var(--forest-deep); margin-bottom: 12px;">Project Jeev</div>
+                <p class="cause-summary" style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">Animal welfare through daily feeding of 50+ strays, rescue operations, medical care, and building community compassion.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cause-preview-card" style="border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; background: var(--white); height: 100%;">
+                <img src="../assets/kids.png" alt="Project Bachpanshala" class="carousel-icon-img">
+                <div class="cause-name" style="font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; color: var(--forest-deep); margin-bottom: 12px;">Project Bachpanshala</div>
+                <p class="cause-summary" style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">Empowering underprivileged children with digital literacy, school supply donations, and life skills that open new worlds.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cause-preview-card" style="border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; background: var(--white); height: 100%;">
+                <img src="../assets/food-donation.png" alt="Project Sewa" class="carousel-icon-img">
+                <div class="cause-name" style="font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; color: var(--forest-deep); margin-bottom: 12px;">Project Sewa</div>
+                <p class="cause-summary" style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">Daily food, water, and clothing relief to underprivileged families and homeless communities, delivered with dignity and love.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cause-preview-card" style="border: 1px solid var(--border); border-radius: 18px; padding: 32px 24px; background: var(--white); height: 100%;">
+                <img src="../assets/internship.png" alt="Project Vikas" class="carousel-icon-img">
+                <div class="cause-name" style="font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; color: var(--forest-deep); margin-bottom: 12px;">Project Vikas</div>
+                <p class="cause-summary" style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">Boosting youth employability through diverse internship programs, skill development, and professional growth opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="../causes/" class="btn btn-dark">View Detailed Causes</a>
+      </div>
+    </div>
+  </section>
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-block">
+          <div class="stat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="stat-n" data-target="50000" data-suffix="+">0</div>
+          <div class="stat-l">Lives Transformed</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8m0 0a4 4 0 0 1 4-4h2a4 4 0 0 1-4 4h-2zm0 0a4 4 0 0 0-4-4H6a4 4 0 0 0 4 4h2z" /></svg>
+          </div>
+          <div class="stat-n" data-target="20000" data-suffix="+">0</div>
+          <div class="stat-l">Saplings Planted</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="2" /><circle cx="7" cy="9" r="2" /><circle cx="17" cy="9" r="2" /><path d="M12 13c-2.5 0-4.5 1.5-4.5 3.5s2 3.5 4.5 3.5 4.5-1.5 4.5-3.5-2-3.5-4.5-3.5z" /></svg>
+          </div>
+          <div class="stat-n" data-target="50" data-suffix="+">0</div>
+          <div class="stat-l">Strays Fed Daily</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          </div>
+          <div class="stat-n" data-target="28" data-suffix="">0</div>
+          <div class="stat-l">States Impacted</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="reveal text-center" style="max-width: 500px; margin: 0 auto 54px;">
+        <span class="section-tag">Gallery</span>
+        <h2 class="sec-title" id="galleryHeading">Moments of Impact</h2>
+        <p class="sec-sub">Small initiatives, great impact.</p>
+      </div>
+      <div class="bento-container" id="bentoContainer">
+        <div class="bento-grid">
+          <div class="bento-item bento-wide reveal">
+            <img class="bento-img" src="../assets/vikaas2.png" alt="Project Vikas Career Development" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Vikas Career Development</h3>
+              <p>Advanced skill workshops and internship training preparing youth for professional careers.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item bento-tall reveal">
+            <img class="bento-img" src="../assets/bachpanshala.png" alt="Project Bachpanshala children studying" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Bachpanshala</h3>
+              <p>Establishing computer labs and supply donations in rural primary schools.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item reveal">
+            <img class="bento-img" src="../assets/prakriti.png" alt="Project Prakriti planting trees" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Prakriti</h3>
+              <p>Volunteers organizing tree plantation drives in urban forest areas.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item reveal">
+            <img class="bento-img" src="../assets/seva.png" alt="Project Seva serving food" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Seva</h3>
+              <p>Nutritious food distributions conducted daily in temporary community shelters.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item bento-short reveal">
+            <img class="bento-img" src="../assets/udaan.png" alt="Project Udaan sewing workshop" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Udaan</h3>
+              <p>Skill development workshops helping women gain tailoring credentials.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item reveal">
+            <img class="bento-img" src="../assets/jeev1.png" alt="Project Jeev feeding dogs" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Jeev</h3>
+              <p>Providing medical checks and roadside shelters made from cardboard and recycled cushions for community strays.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item reveal">
+            <img class="bento-img" src="../assets/vikaas.png" alt="Project Vikas skill training" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Vikas</h3>
+              <p>Youth employability workshops in computer literacy and communications.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bento-item reveal">
+            <img class="bento-img" src="../assets/jeev2.png" alt="Project Jeev feeding dogs" loading="lazy">
+            <div class="bento-hover-content">
+              <h3>Project Jeev Feed</h3>
+              <p>Providing daily food and clean drinking water to community strays.</p>
+              <div class="bento-item-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="journey" id="journey">
+    <div class="container">
+      <div class="reveal text-center" style="max-width: 520px; margin: 0 auto;">
+        <span class="eyebrow">How You Can Help</span>
+        <h2 class="sec-title">Your journey<br>starts here</h2>
+      </div>
+      <div class="journey-flow">
+        <div class="journey-step reveal">
+          <div class="j-num">1</div>
+          <div class="j-title">Discover</div>
+          <div class="j-desc">Explore our six causes and find which one speaks to your heart.</div>
+        </div>
+        <div class="journey-step reveal d1">
+          <div class="j-num">2</div>
+          <div class="j-title">Connect</div>
+          <div class="j-desc">Fill in a simple form — our team will reach out personally.</div>
+        </div>
+        <div class="journey-step reveal d2">
+          <div class="j-num">3</div>
+          <div class="j-title">Participate</div>
+          <div class="j-desc">Attend events, drives, and workshops near you or online.</div>
+        </div>
+        <div class="journey-step reveal d3">
+          <div class="j-num">4</div>
+          <div class="j-title">Make Impact</div>
+          <div class="j-desc">Every act, big or small, creates ripples that reach far beyond what you can see.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stories" id="voices">
+    <div class="container">
+      <div class="reveal text-center" style="max-width: 600px; margin: 0 auto 54px;">
+        <span class="eyebrow">Stories of Change</span>
+        <h2 class="sec-title">Voices from Our Community</h2>
+        <p class="sec-sub">Every act of service creates ripples. Read direct experiences from our core volunteers.</p>
+      </div>
+      <div class="stories-grid">
+        <div class="story-card reveal">
+          <div class="story-q">I joined just to earn a certificate. I stayed because I found a family. Feeding 50 animals every morning changed how I see the world. It taught me true compassion.</div>
+          <div class="story-person">
+            <div class="story-av">P</div>
+            <div>
+              <div class="story-name">Priya S.</div>
+              <div class="story-role">Project Jeev Volunteer · Raipur</div>
+            </div>
+          </div>
+        </div>
+        <div class="story-card reveal d1">
+          <div class="story-q">One Saturday I helped pack food. The grandmother who received it held my hand and said "God bless you, child." I cried the whole ride home. It made me realize the weight of small actions.</div>
+          <div class="story-person">
+            <div class="story-av">A</div>
+            <div>
+              <div class="story-name">Aryan M.</div>
+              <div class="story-role">Project Sewa Volunteer · Bilaspur</div>
+            </div>
+          </div>
+        </div>
+        <div class="story-card reveal d2">
+          <div class="story-q">Teaching a 10-year-old to use a computer for the first time — watching her eyes light up — that's when I understood what InAmigos truly means. We are opening gates to the future.</div>
+          <div class="story-person">
+            <div class="story-av">F</div>
+            <div>
+              <div class="story-name">Faiz K.</div>
+              <div class="story-role">Volunteer Supervisor · Uttar Pradesh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section" id="ctaSection">
+    <div class="cta-container" id="ctaContainer">
+      <div class="cta-content">
+        <h2 class="cta-title">Be a Part of the Change</h2>
+        <p class="cta-subtitle">Your small step can create a big impact.</p>
+        <button class="btn btn-light" id="openFormBtn">
+          <span>Join Community</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+    <div class="form-panel" id="formPanel">
+      <button class="close-form-btn" id="closeFormBtn" aria-label="Close Form">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="form-scroll-container">
+        <h3 class="form-title">Join Our Community</h3>
+        <p class="form-subtitle">Fill out the details below, and our team will get in touch with you shortly.</p>
+        <form id="joinCommunityForm">
+          <div class="form-grid-custom">
+            <div class="form-group grid-name">
+              <input type="text" id="nameInput" class="form-input" placeholder=" " required />
+              <label for="nameInput" class="form-label">Full Name</label>
+              <span class="focus-line"></span>
+            </div>
+            <div class="form-group grid-interest">
+              <div class="custom-select-wrapper" id="interestSelectWrapper">
+                <div class="custom-select-trigger" id="interestSelectTrigger">
+                  <span id="selectedOptionText">Select Area of Interest</span>
+                  <div class="select-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+                <div class="custom-options" id="interestOptions">
+                  <div class="custom-option" data-value="seva">Project Seva (Food relief)</div>
+                  <div class="custom-option" data-value="bachpan">Project Bachpanshala (Education)</div>
+                  <div class="custom-option" data-value="jeev">Project Jeev (Animal welfare)</div>
+                  <div class="custom-option" data-value="udaan">Project Udaan (Women Empowerment)</div>
+                  <div class="custom-option" data-value="prakriti">Project Prakriti (Environment)</div>
+                  <div class="custom-option" data-value="vikas">Project Vikas (Internship)</div>
+                  <div class="custom-option" data-value="general">General Volunteering</div>
+                </div>
+                <input type="hidden" name="interest" id="interestInput" required />
+              </div>
+              <span class="form-select-label-floating" id="dropdownFloatingLabel">Area of Interest</span>
+              <span class="focus-line"></span>
+            </div>
+            <div class="form-group grid-email">
+              <input type="email" id="emailInput" class="form-input" placeholder=" " required />
+              <label for="emailInput" class="form-label">Email Address</label>
+              <span class="focus-line"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-submit">
+            <span>Submit Application</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </form>
+      </div>
+      <div class="success-overlay" id="successOverlay">
+        <div class="success-card">
+          <div class="success-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3>Welcome Aboard!</h3>
+          <p>Thank you for choosing to support InAmigos Foundation. Your form has been submitted successfully, and our representative will reach out to you within 48 hours.</p>
+          <button class="btn btn-dark" id="successCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">InAmigos <em>Foundation</em></div>
+          <div class="footer-motto">Uniting Minds for Change · Est. 2020</div>
+        </div>
+        <nav class="footer-nav">
+          <a href="../home/">Home</a>
+          <a href="../about/">About Us</a>
+          <a href="../causes/">Causes</a>
+          <a href="../stories/">Stories</a>
+          <a href="../events/">Events</a>
+          <a href="https://inamigosfoundation.org.in/contact" target="_blank">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/inamigos/" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/inamigos-foundation" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://twitter.com/InamigosF" target="_blank" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="https://youtube.com/@inamigosfoundation4296" target="_blank" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 InAmigos Foundation. All rights reserved. Registered under Section 8, Companies Act 2013 · Ward No. 5, Sipat Ujwal Nagar, Bilaspur, CG 495555
+      </div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
